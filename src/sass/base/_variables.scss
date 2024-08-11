@@ -10,4 +10,17 @@
   --white: #ffffff;
   --gradient-pink: linear-gradient(to bottom, #f02aa6, #ff6f48);
   --gradient-purple: linear-gradient(to bottom, #4851ff, #f02aa6);
+
+  --gradient-pink-light: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.5)
+    ),
+    var(--gradient-pink);
+  --gradient-purple-light: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.5)
+    ),
+    var(--gradient-purple);
 }
