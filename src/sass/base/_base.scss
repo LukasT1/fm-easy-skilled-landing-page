@@ -6,6 +6,29 @@ html {
 }
 
 .container {
+  position: relative;
   max-width: 144rem;
   margin: 0 auto;
+  overflow: hidden;
+  background: linear-gradient(to bottom, #ffffff, #f0f1ff);
+  // background-image: url(../../assets/image-hero-desktop.png);
+  // background-size: 65%;
+  // background-repeat: no-repeat;
+  // background-position: 140% -5%;
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 112rem;
+  padding: 0 var(--300);
+}
+
+@media (max-width: $bp-600) {
+  html {
+    font-size: 55%;
+  }
+
+  .wrapper {
+    padding: 0 var(--250);
+  }
 }

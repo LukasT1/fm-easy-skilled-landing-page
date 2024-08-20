@@ -8,7 +8,7 @@
   --pink-300: #ffa7c3;
   --grey: #83869a;
   --white: #ffffff;
-  --gradient-pink: linear-gradient(to bottom, #f02aa6, #ff6f48);
+  --gradient-pink: linear-gradient(to bottom, #ff6f48, #f02aa6);
   --gradient-purple: linear-gradient(to bottom, #4851ff, #f02aa6);
 
   --gradient-pink-light: linear-gradient(
@@ -23,4 +23,28 @@
       rgba(255, 255, 255, 0.5)
     ),
     var(--gradient-purple);
+
+  ////
+  //SPACING
+  ////
+
+  --100: 0.8rem;
+  --150: 1.2rem;
+  --200: 1.6rem;
+  --250: 2rem;
+  --300: 2.4rem;
+  --400: 3.2rem;
+  --500: 4rem;
+  --550: 4.4rem;
+  --600: 4.8rem;
+  --700: 5.6rem;
+  --800: 6.4rem;
+  --1000: 8rem;
+  --1600: 12.8rem;
+  --1800: 14.4rem;
 }
+
+$bp-1200: 75em; // 1em = 10px > 1024px = 102.4em
+$bp-1000: 62.5em; // 1rem = 9px >  768 / 9 = 85.3em
+$bp-800: 50em;
+$bp-600: 37.5em; // 1rem = 8px > 550 / 8 =

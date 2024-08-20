@@ -1,0 +1,108 @@
+@use "../base/mixins" as *;
+@use "../base/variables" as *;
+
+.hero {
+  //   margin-top: 10rem;
+  display: grid;
+  grid-template-columns: 1fr 45%;
+  column-gap: var(--400);
+  align-items: center;
+  margin: var(--800) 0;
+  margin-bottom: -10rem;
+
+  &__content {
+    margin-top: -15rem; // to center the left side relative to the image
+    &-heading {
+      grid-column: 1 / 2;
+      margin-bottom: var(--300);
+    }
+    &-description {
+      grid-column: 1 / 2;
+      margin-bottom: var(--500);
+    }
+    &-btn {
+      grid-column: 1 / 2;
+    }
+  }
+
+  &__img {
+    height: 100%;
+    width: auto;
+    overflow: visible;
+    grid-column: 2 / -1;
+
+    transform: translate(-5%, -13%);
+  }
+}
+
+@media (max-width: $bp-1200) {
+  .hero {
+    grid-template-columns: 1fr 40%;
+    margin-bottom: 0rem;
+
+    &__content {
+      margin-top: -10rem;
+    }
+    &__img {
+      margin-left: -20%;
+      height: 100%;
+      transform: translate(15%, -10%);
+    }
+  }
+}
+
+@media (max-width: $bp-1000) {
+  .hero {
+    &__content {
+    }
+    &__img {
+      height: 100%;
+      transform: translate(5%, -7%);
+    }
+  }
+}
+
+@media (max-width: $bp-800) {
+  .hero {
+    margin-bottom: 10rem;
+
+    &__content {
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+
+      justify-content: space-between; /* Or start/end based on your design */
+
+      height: 100%;
+      &-btn {
+        align-self: self-start;
+      }
+    }
+
+    &__img {
+      width: 50vw;
+      height: auto;
+      margin-left: -8%;
+      transform: translate(0, 0);
+    }
+  }
+}
+@media (max-width: $bp-600) {
+  .hero {
+    grid-template-columns: 100%;
+    grid-template-rows: min-content 1fr;
+    align-content: center;
+
+    &__content {
+      &-btn {
+        align-self: start;
+      }
+    }
+
+    &__img {
+      margin-left: -2%;
+      grid-column: auto;
+      width: 100vw;
+    }
+  }
+}

@@ -1,0 +1,16 @@
+@use "../base/mixins" as *;
+@use "../base/variables" as *;
+
+.header {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--300) 0;
+}
+
+@media (max-width: $bp-600) {
+  .header__logo {
+    transform: scale(0.8);
+  }
+}

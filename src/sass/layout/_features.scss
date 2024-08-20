@@ -1,0 +1,54 @@
+@use "../base/mixins" as *;
+@use "../base/variables" as *;
+
+.content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(29rem, 1fr));
+  grid-auto-flow: dense;
+  column-gap: var(--400);
+  row-gap: var(--700);
+  justify-items: center;
+  padding-bottom: var(--1000);
+
+  &__card {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: start;
+    justify-content: space-around;
+    width: 100%;
+    padding: var(--800) var(--400) var(--500) var(--400);
+    border-radius: 1.5rem;
+    box-shadow: 0 2.5rem 5rem rgba($color: #06168d, $alpha: 0.042);
+
+    &-icon {
+      position: absolute;
+      top: 0;
+      left: 5%;
+      transform: translateY(-50%);
+    }
+    &--white {
+      background-color: var(--white);
+      position: relative;
+
+      & > p {
+        color: var(--grey);
+        padding: var(--300) 0;
+      }
+    }
+
+    &--orange {
+      background: var(--gradient-pink);
+      position: relative;
+
+      & > h3 {
+        color: var(--white);
+      }
+    }
+  }
+}
+
+@media (max-width: $bp-600) {
+  .content {
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  }
+}
