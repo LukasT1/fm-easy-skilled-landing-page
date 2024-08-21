@@ -28,8 +28,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Add solution URL here](https://github.com/LukasT1/fm-easy-skilled-landing-page)
+- Live Site URL: [https://LukasT1.github.io/fm-easy-skilled-landing-page]
 
 ## My process
 
@@ -56,4 +56,4 @@ In the end I am quite satisified with this. Was it not for the troubles with the
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [@LukasT1](https://www.frontendmentor.io/profile/LukasT1)
