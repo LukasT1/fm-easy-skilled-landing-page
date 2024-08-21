@@ -28,7 +28,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/LukasT1/fm-easy-skilled-landing-page)
+- Solution URL: [https://github.com/LukasT1/fm-easy-skilled-landing-page]
 - Live Site URL: [https://LukasT1.github.io/fm-easy-skilled-landing-page]
 
 ## My process

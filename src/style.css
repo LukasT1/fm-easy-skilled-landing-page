@@ -294,10 +294,9 @@ p {
   .hero {
     grid-template-columns: 100%;
     grid-template-rows: min-content 1fr;
-    align-content: center;
   }
   .hero__content-btn {
-    align-self: start;
+    transform: translateX(-0.25%);
   }
   .hero__img {
     margin-left: -2%;
