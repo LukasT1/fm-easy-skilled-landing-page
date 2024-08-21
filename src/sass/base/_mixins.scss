@@ -1,3 +1,4 @@
+// For buttons with gradient background to be able to use transition on them
 @mixin position($bg) {
   content: "";
   background: $bg;
