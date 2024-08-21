@@ -14,7 +14,7 @@
     padding: var(--300) var(--250);
 
     &__logo {
-      transform: scale(0.8);
+      max-width: 35vw;
     }
   }
 }

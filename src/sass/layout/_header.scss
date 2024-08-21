@@ -11,6 +11,6 @@
 
 @media (max-width: $bp-600) {
   .header__logo {
-    transform: scale(0.8);
+    max-width: 35vw;
   }
 }
